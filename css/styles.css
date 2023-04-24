@@ -62,7 +62,7 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto; */
-    outline: 2px solid rgb(240, 97, 8);
+    /* outline: 2px solid rgb(240, 97, 8); */
 }
 
 @media only screen and (min-width: 768px) {
