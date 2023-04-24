@@ -62,7 +62,7 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto; */
-    /* outline: 2px solid rgb(240, 97, 8); */
+    outline: 2px solid rgb(240, 97, 8);
 }
 
 @media only screen and (min-width: 768px) {
@@ -380,7 +380,7 @@ button {
 
 .mobile-social-list {
     display: flex;
-    gap: 56px;
+    /* gap: 56px; */
     justify-content: center;
     margin-top: 48px;
 }
@@ -416,7 +416,6 @@ button {
    
 }
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero{
@@ -427,14 +426,14 @@ button {
 
 @media only screen and (min-width: 428px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bg_tab@1x.jpg);
         max-width: 768px;
         min-height: 436px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bg_tab@1x.jpg);
+       
     }
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
@@ -446,13 +445,14 @@ button {
 
 @media only screen and (min-width: 768px) {
     .hero {
+        max-width: 1440px;
+        min-height: 436px;
+        
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bg_desk@1x.jpg);
-        max-width: 768px;
-        min-height: 436px;
+       
     }
     @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .hero {
@@ -466,7 +466,7 @@ button {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     min-height: 600px;
   }
 }
@@ -733,7 +733,7 @@ button {
 
 @media only screen and (min-width: 1158px) {
     .personnel-list .item {
-        flex-basis: calc((100% - 24px*3)/4);
+        flex-basis: calc((100% - 24px*3) / 4);
     }
 }
 
@@ -787,19 +787,33 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     gap: 72px 16px;
-    flex-basis: calc((100% - 16)/2);
+    
 }
 
 @media only screen and (min-width: 768px) {
   .customers-list {
     gap:72px 24px;
-    flex-basis: calc((100% - 24px*2)/3);
   }
 }
 
 @media only screen and (min-width: 1158px) {
     .customers-list {
-        gap: 24px;
+        gap: 24px;  
+    }
+}
+
+.customers-list .item {
+       flex-basis: calc((100% - 16px)/2);
+}
+
+@media only screen and (min-width: 768px) {
+    .customers-list .item {
+        flex-basis: calc((100% - 24px*2)/3);
+    }
+} 
+
+@media only screen and (min-width: 1158px) {
+    .customers-list .item {
         flex-basis: calc((100% - 24px*5)/6);
     }
 }
@@ -810,7 +824,7 @@ button {
     align-items: center;
     
 
-    width: 190px;
+    max-width: 190px;
     height: 88px;
     color: #8E8F99;
     border: 1px solid #8E8F99;
@@ -822,7 +836,7 @@ button {
 
 @media only screen and (min-width: 768px) {
   .customers-link {
-    width: 168px;
+    max-width: 168px;
   }
 }
 
